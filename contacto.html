@@ -4,43 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contáctenos - Secxto Cocina de Autor</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Playfair+Display:wght@400;700&display=swap"
+          rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
+<header>
+    <div class="container">
+        <h1>Secxto Cocina de Autor</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="contacto.html">Contáctenos</a></li>
+                <li><a href="reservas.html">Reservas</a></li>
+                <li><a href="login.html">Iniciar Sesión</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main>
+    <section class="contacto">
         <div class="container">
-            <h1>Secxto Cocina de Autor</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="quienes-somos.html">Quiénes Somos</a></li>
-                    <li><a href="contacto.html">Contáctenos</a></li>
-                    <li><a href="login.html">Iniciar Sesión</a></li>
-                </ul>
-            </nav>
+            <h2>Contáctenos</h2>
+            <form id="contactoForm">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
         </div>
-    </header>
-    <main>
-        <section class="contacto">
-            <div class="container">
-                <h2>Contáctenos</h2>
-                <form id="contactoForm">
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" required>
-                    <label for="correo">Correo electrónico:</label>
-                    <input type="email" id="correo" name="correo" required>
-                    <label for="mensaje">Mensaje:</label>
-                    <textarea id="mensaje" name="mensaje" required></textarea>
-                    <button type="submit">Enviar</button>
-                </form>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <div class="container">
-            <p>Contacto: info@secxto.com | Tel: 123-456-7890</p>
-        </div>
-    </footer>
+    </section>
+</main>
+<footer>
+    <div class="container">
+        <p>Contacto: info@secxto.com | Tel: 123-456-7890</p>
+    </div>
+</footer>
 </body>
 </html>

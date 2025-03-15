@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro - Secxto Cocina de Autor</title>
+    <title>Servicios - Secxto Cocina de Autor</title>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Playfair+Display:wght@400;700&display=swap"
           rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
@@ -18,28 +18,28 @@
                 <li><a href="quienes-somos.html">Quiénes Somos</a></li>
                 <li><a href="servicios.html">Servicios</a></li>
                 <li><a href="contacto.html">Contáctenos</a></li>
-                <li><a href="reservas.html">Reservas</a></li>
                 <li><a href="login.html">Iniciar Sesión</a></li>
             </ul>
         </nav>
     </div>
 </header>
 <main>
-    <section class="formulario">
+    <section class="menu">
         <div class="container">
-            <h2>Registro</h2>
-            <form id="registroForm" action="php/registro.php" method="POST"><label for="nombre">Nombre completo:</label>
-                <input type="text" id="nombre" name="nombre" required>
-
-                <label for="correo">Correo electrónico:</label>
-                <input type="email" id="correo" name="correo" required>
-
-                <label for="password">Contraseña:</label>
-                <input type="password" id="password" name="password" required>
-
-                <button type="button" onclick="registro()">Registrarse</button>
-            </form>
-            <p>¿Ya tienes una cuenta? <a href="login.html">Inicia sesión aquí</a></p>
+            <h2>Nuestros Menús</h2>
+            <div class="cards">
+                <!-- Ejemplo de card para un menú -->
+                <div class="card">
+                    <div class="image-container">
+                        <img src="img/menu1.jpg" alt="Desayuno">
+                    </div>
+                    <h3>Desayuno Continental</h3>
+                    <p>Delicioso desayuno con frutas, jugo y café.</p>
+                    <p><strong>Precio: $10.000</strong></p>
+                    <button onclick="reservarMenu(1)">Reservar</button>
+                </div>
+                <!-- Agrega más cards según sea necesario -->
+            </div>
         </div>
     </section>
 </main>
