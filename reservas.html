@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservar - Secxto Cocina de Autor</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Playfair+Display:wght@400;700&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header>
+    <div class="container">
+        <h1>Secxto Cocina de Autor</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+                <li><a href="contacto.html">Contáctenos</a></li>
+                <li><a href="reservas.html">Reservar</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main>
+    <section class="formulario">
+        <div class="container">
+            <h2>Reservar una Mesa</h2>
+            <form id="reservasForm" action="php/reservar.php" method="POST">
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+
+                <label for="fecha">Fecha de la reserva:</label>
+                <input type="date" id="fecha" name="fecha" required>
+
+                <label for="hora">Hora de la reserva:</label>
+                <input type="time" id="hora" name="hora" required>
+
+                <label for="personas">Número de personas:</label>
+                <input type="number" id="personas" name="personas" required>
+
+                <button type="submit">Reservar</button>
+            </form>
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="container">
+        <p>Contacto: info@secxto.com | Tel: 123-456-7890</p>
+    </div>
+</footer>
+</body>
+</html>

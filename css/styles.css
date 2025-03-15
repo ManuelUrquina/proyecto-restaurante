@@ -1,0 +1,392 @@
+/* Estilos generales para el modo oscuro */
+body {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Hace que el body ocupe al menos el 100% de la altura de la ventana */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background-color: #121212;
+    color: #e0e0e0;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-family: 'Cinzel', serif;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff6f61;
+}
+
+/* Main Content */
+main {
+    flex: 1; /* Hace que el contenido principal ocupe el espacio restante */
+    padding: 20px 0;
+}
+
+/* Hero Section */
+.hero {
+    background: url('img/hero.jpg') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #e0e0e0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin: 0;
+    font-family: 'Cinzel', serif; /* Tipografía elegante */
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.hero .btn {
+    background-color: #ff6f61;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+.hero .btn:hover {
+    background-color: #e65a50;
+}
+
+/* About Section */
+/* Estilos para la sección "Quiénes Somos" */
+.about {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #e0e0e0;
+    font-family: 'Cinzel', serif;
+}
+
+.about .carrusel {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.about .carrusel .perfil {
+    width: 30%;
+    max-width: 200px;
+    margin: 10px;
+    text-align: center;
+}
+
+.about .carrusel .perfil img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%; /* Hace que las imágenes sean redondas */
+    border: 4px solid #ff6f61; /* Borde de acento */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.about .carrusel .perfil img:hover {
+    transform: scale(1.1); /* Efecto de zoom al pasar el mouse */
+}
+
+.about .carrusel .perfil h3 {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #e0e0e0;
+    font-family: 'Playfair Display', serif;
+}
+
+.about .carrusel .perfil p {
+    font-size: 1rem;
+    color: #b0b0b0;
+}
+
+/* Menu Section */
+.menu {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.menu .cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.menu .card {
+    background-color: #242424; /* Fondo oscuro para las cards */
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 20px;
+    width: 30%;
+    margin: 10px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.menu .card:hover {
+    transform: translateY(-10px);
+}
+
+.menu .card .image-container {
+    width: 100%;
+    padding-top: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.menu .card .image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.menu .card h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    font-family: 'Cinzel', serif; /* Tipografía elegante */
+}
+
+.menu .card p {
+    font-size: 1rem;
+    color: #b0b0b0; /* Texto más claro */
+}
+
+.menu .card button {
+    background-color: #ff6f61;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.menu .card button:hover {
+    background-color: #e65a50;
+}
+
+/* Contact Section */
+.contacto {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.contacto form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #242424; /* Fondo oscuro para el formulario */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contacto form label {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: #e0e0e0;
+    align-self: flex-start;
+    width: 100%;
+    max-width: 300px;
+}
+
+.contacto form input, .contacto form textarea {
+    margin-top: 5px;
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #333; /* Fondo oscuro para los inputs */
+    color: #e0e0e0;
+}
+
+.contacto form input:focus, .contacto form textarea:focus {
+    border-color: #ff6f61;
+    outline: none;
+}
+
+.contacto form button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff6f61;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.contacto form button:hover {
+    background-color: #e65a50;
+}
+
+.contacto p {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #e0e0e0;
+}
+
+.contacto p a {
+    color: #ff6f61;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contacto p a:hover {
+    color: #e65a50;
+}
+
+
+/* Footer */
+footer {
+    background-color: #121212;
+    color: #e0e0e0;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto; /* Empuja el footer hacia la parte inferior */
+}
+
+/* Estilos generales para formularios */
+.formulario {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.formulario h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #e0e0e0;
+    font-family: 'Cinzel', serif;
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #242424;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.formulario form label {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: #e0e0e0;
+    align-self: flex-start;
+    width: 100%;
+    max-width: 300px;
+}
+
+.formulario form input {
+    margin-top: 5px;
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #333;
+    color: #e0e0e0;
+}
+
+.formulario form input:focus {
+    border-color: #ff6f61;
+    outline: none;
+}
+
+.formulario form button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff6f61;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.formulario form button:hover {
+    background-color: #e65a50;
+}
+
+.formulario p {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #e0e0e0;
+}
+
+.formulario p a {
+    color: #ff6f61;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.formulario p a:hover {
+    color: #e65a50;
+}

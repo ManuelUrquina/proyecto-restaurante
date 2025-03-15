@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión - Secxto Cocina de Autor</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Playfair+Display:wght@400;700&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header>
+    <div class="container">
+        <h1>Secxto Cocina de Autor</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+                <li><a href="contacto.html">Contáctenos</a></li>
+                <li><a href="reservas.html">Reservas</a></li>
+                <li><a href="registro.html">Registrarse</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main>
+    <section class="formulario">
+        <div class="container">
+            <h2>Iniciar Sesión</h2>
+            <form id="loginForm">
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="button" onclick="login()">Iniciar Sesión</button>
+            </form>
+            <p>¿No tienes una cuenta? <a href="registro.html">Regístrate aquí</a></p>
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="container">
+        <p>Contacto: info@secxto.com | Tel: 123-456-7890</p>
+    </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
